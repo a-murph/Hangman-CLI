@@ -1,10 +1,10 @@
 var Letter = function(newLetter) {
-	this.answer = newLetter;
+	this.answer = newLetter.toLowerCase();
 	this.solved = false;
 
 	//always display spaces
 	if (this.answer == " ")
-		this.solved = true;
+	 	this.solved = true;
 
 	//function that returns letter if solved or _ otherwise
 	this.returnLetter = function() {
@@ -16,7 +16,7 @@ var Letter = function(newLetter) {
 
 	//function that changes solved if guess is correct
 	this.guess = function(input) {
-		if (input == this.answer)
+		if (input.toLowerCase() === this.answer)
 			this.solved = true;
 	};
 }
