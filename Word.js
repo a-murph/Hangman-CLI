@@ -3,7 +3,7 @@ var Letter = require("./Letter.js");
 var Word = function(newWord) {
 	this.wordArr = newWord.split("");	
 	this.letterArr = [];
-	this.chances = 8;
+	this.chances = 5;
 
 	//sets letterArr to an array of Letter objects matching the word given
 	for (var i = 0; i < this.wordArr.length; i++) {
